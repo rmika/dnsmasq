@@ -6,10 +6,10 @@ docker run \
     --volume /etc/timezone:/etc/timezone:ro \
     --volume /etc/dnsmasq.d/bgbilling:/etc/dnsmasq.d \
     --volume /var/log/dnsmasq:/var/log/dnsmasq \
-    --dns 192.168.1.1 \
     --publish 53:53/udp \
     dnsmasq
 
+#    --dns 192.168.1.1 \
 #    --volume /etc/dnsmasq.d/test:/etc/dnsmasq.d \
 #    --restart always dnsmasq \
 #    --log-opt "max-size=10m" \
